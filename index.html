@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FNAF Game Online - Play Five Nights at Freddy's Free Game</title>
-    <meta name="description" content="Play Five Nights at Freddy's online game for free. Experience the thrilling survival horror game where you must survive five nights as a security guard at Freddy Fazbear's Pizza.">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Poppins', sans-serif; }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FNAF - Free Online Survival Horror Game</title>
+    <meta name="description" content="Play FNAF free online, the ultimate survival horror game with creepy animatronics, chilling visuals, and immersive gameplay. Survive five nights at Freddy's with no weapons, just your wits.">
+    <link rel="canonical" href="https://fnaf-game.online/">
+    <script src="https://sprunkigame.com/tailwind.js"></script>
+    <link rel="shortcut icon" href="../img/icon/favicon.ico" />
+    <link rel="icon" type="image/png" href="../img/icon/favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/icon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/icon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/icon/favicon-16x16.png" />
+    <link rel="manifest" href="../site.webmanifest" />
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-6XWB7NNWDR"></script>
     <script>
@@ -21,110 +23,319 @@
     
       gtag('config', 'G-6XWB7NNWDR');
     </script>
+    <script type="text/javascript" src="https://server.listyes.com/track/t.o.js?v=24102622"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
-<body class="bg-gray-900 text-white">
-    <!-- Hero Section -->
-    <header class="relative min-h-screen flex items-center justify-center bg-gradient-to-b from-purple-900 to-gray-900">
-        <div class="container mx-auto px-4 py-16 text-center">
-            <h1 class="text-4xl md:text-6xl font-bold mb-6 text-purple-300">Five Nights at Freddy's Online</h1>
-            <p class="text-xl md:text-2xl mb-8 text-gray-300">Can you survive five nights at Freddy Fazbear's Pizza?</p>
-            <div class="w-full max-w-4xl mx-auto aspect-video rounded-lg overflow-hidden shadow-2xl">
-                <iframe src="https://run3.io/popgame/fnaf/fnaf1/" class="w-full h-full" frameborder="0" allowfullscreen></iframe>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="../" class="logo-link">
+                    <img src="../img/icon/web-app-manifest-192x192.png" alt="FNAF Game Logo" class="logo-image">
+                    <h2 class="site-title">FNAF GAME</h2>
+                </a>
+                <!-- <button id="menuBtn" class="mobile-menu-button">
+                    <svg class="menu-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button> -->
             </div>
+
+            <!-- <nav id="mobileMenu" class="main-nav">
+                <button id="closeMenuBtn" class="close-menu-button">
+                    <svg class="close-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                        </path>
+                    </svg>
+                </button>
+
+                
+            </nav> -->
         </div>
     </header>
 
-    <!-- Game Overview -->
-    <section class="py-16 bg-gray-800">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center text-purple-300">Game Overview</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="space-y-4">
-                    <h3 class="text-2xl font-semibold text-purple-400">What is FNAF?</h3>
-                    <p class="text-gray-300">Five Nights at Freddy's (FNAF) is a survival horror game where you play as a night security guard at Freddy Fazbear's Pizza. Your task is to survive five nights while monitoring security cameras and managing limited power resources.</p>
+    <main>
+        <h1>
+            Play FNAF Game Online For Free, Survive the Five Nights at Freddy's
+        </h1>
+        
+            <div class="game-container">
+
+                <div id="games" class="iframeContainer">
+                    <iframe id="gameFrame" src="https://run3.io/popgame/fnaf/fnaf1/" title="FNAF">
+                    </iframe>
+                    <button id="exitFullscreenBtn">
+                        Exit
+                    </button>
                 </div>
-                <div class="space-y-4">
-                    <h3 class="text-2xl font-semibold text-purple-400">Key Features</h3>
-                    <ul class="list-disc list-inside text-gray-300 space-y-2">
-                        <li>Survive five terrifying nights</li>
-                        <li>Monitor security cameras</li>
-                        <li>Manage power resources</li>
-                        <li>Face animatronic characters</li>
+
+                <div class="controls">
+                    <div>
+                        <p>Play FNAF Game Free Online, The Ultimate Survival Horror Experience with Creepy Animatronics and Chilling Visuals.</p>
+                    </div>
+                    <div class="button-container">
+                        <button id="fullscreenBtn">
+                            <span>&#x26F6;</span> Fullscreen
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Replace the existing explore section with this -->
+            <!-- <div id="exploreGamesContainer"></div> -->
+
+        <article>
+            <section class="introduction">
+                <div class="intro-container">
+                    <div class="intro-content">
+                        <h2>What is FNAF Five Nights at Freddy's</h2>
+                        <p>Five Nights at Freddy's (FNAF) stands as a groundbreaking survival horror phenomenon that revolutionized the gaming industry. Created by the visionary developer Scott Cawthon, this masterpiece combines psychological horror with strategic gameplay, creating an experience that has captivated millions of players worldwide. Set in the seemingly innocent Freddy Fazbear's Pizza, players step into the shoes of a night security guard facing unimaginable horrors when the restaurant's animatronic mascots come to life with sinister intentions.</p>
+
+                        <p>The game's innovative approach to horror lies in its unique premise: players must survive five nights while managing limited resources and fending off hostile animatronics. During each night shift, you're confined to a small security office, armed only with security cameras, door controls, and a finite power supply. The animatronic characters - Freddy Fazbear, Bonnie, Chica, and Foxy - move freely throughout the facility, becoming increasingly aggressive as the nights progress. Your survival depends on strategic resource management, quick thinking, and the ability to remain calm under extreme pressure.</p>
+                            
+                        <p>FNAF's narrative depth sets it apart in the horror genre. The game masterfully weaves an intricate story through subtle environmental storytelling, mysterious phone calls, and hidden mini-games. Players uncover dark secrets about the restaurant's history, including the infamous "Missing Children Incident" and the "Bite of '87," which add layers of psychological horror to the gameplay experience. The series has expanded to include multiple sequels, each adding new dimensions to the lore while introducing innovative gameplay mechanics and locations.</p>
+                            
+                        <p>The franchise's success has transcended gaming, spawning a multimedia empire that includes bestselling novels, merchandise, and a highly anticipated feature film. From its humble beginnings as an indie game in 2014 to its current status as a cultural phenomenon, FNAF continues to evolve and terrify new generations of players. The game's unique blend of resource management, psychological horror, and compelling storytelling has established it as a cornerstone of modern horror gaming, inspiring countless imitators while maintaining its position as the genre's defining experience.</p>
+
+                        <p>Today, FNAF represents more than just a game - it's a testament to the power of innovative game design and storytelling. Its influence can be seen across the gaming industry, particularly in how it revolutionized the way horror games approach tension-building and player engagement. Whether you're a seasoned horror fan or new to the genre, Five Nights at Freddy's offers an unforgettable experience that continues to set the standard for horror gaming excellence.</p>
+                        <div class="divider"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="features">
+                <h2>
+                    Key Features of FNAF
+                </h2>
+                <div class="content">
+                    
+                <div>
+                    <h3>Immersive Horror Experience</h3>
+                    <p>Experience heart-pounding terror in a meticulously crafted horror environment. With state-of-the-art graphics, dynamic lighting effects, and an eerie atmosphere that keeps you on the edge of your seat, FNAF delivers an unforgettable horror gaming experience.</p>
+                </div>
+                <div>
+                    <h3>Advanced AI Animatronics</h3>
+                    <p>Face off against sophisticated animatronic characters with unique behaviors and attack patterns. Each character, from Freddy Fazbear to Golden Freddy, features advanced AI that learns and adapts to your playing style, creating an ever-evolving challenge.</p>
+                </div>
+                <div>
+                    <h3>Resource Management</h3>
+                    <p>Master the art of survival through strategic resource management. Monitor your limited power supply, manage security cameras, and control door mechanisms while keeping track of multiple threats. Every decision counts in your fight for survival until dawn.</p>
+                </div>
+                <div>
+                    <h3>Rich Storyline & Lore</h3>
+                    <p>Uncover a deep, mysterious narrative filled with dark secrets and haunting revelations. Piece together the tragic history of Freddy Fazbear's Pizza through hidden clues, mysterious phone calls, and environmental storytelling that has captivated millions of fans worldwide.</p>
+                </div>
+                <div>
+                    <h3>Dynamic Sound Design</h3>
+                    <p>Experience terror through masterfully crafted audio. From subtle mechanical whirs to bone-chilling screams, FNAF's advanced sound design creates an immersive horror atmosphere that will keep you alert and terrified throughout your night shift.</p>
+                </div>
+                <div>
+                    <h3>Multiple Game Modes</h3>
+                    <p>Challenge yourself with various difficulty levels and custom night settings. Unlock new content, discover secret mini-games, and test your skills against increasingly difficult scenarios as you progress through the game.</p>
+                </div>
+                </div>
+            </section>
+
+            <section class="how-to-play">
+                <h2>
+                    How to Play FNAF
+                </h2>
+                <div class="content">
+                    
+                <div>
+                    <h3>Master the Security System</h3>
+                    <p>Efficiently monitor the security camera network to track animatronic movements. Switch between camera feeds strategically to maintain awareness of all potential threats. Each camera view provides crucial information about the animatronics' locations and patterns, helping you anticipate their next moves.</p>
+                </div>
+                <div>
+                    <h3>Strategic Door and Light Management</h3>
+                    <p>Control the security doors and lights with precision timing. Use the lights to check blind spots in the doorways, and close doors only when absolutely necessary to conserve power. Remember that each action consumes valuable electricity, so timing is crucial for survival.</p>
+                </div>
+                <div>
+                    <h3>Master Sound Recognition</h3>
+                    <p>Develop acute audio awareness to detect animatronic movement. Different sounds indicate specific threats: footsteps signal movement, mechanical whirring suggests nearby presence, and silence can be just as telling. Your ability to interpret these audio cues is vital for survival.</p>
+                </div>
+                <div>
+                    <h3>Power Conservation</h3>
+                    <p>Carefully manage your limited power supply throughout the night. Each electrical system - cameras, doors, and lights - drains power. Monitor your power percentage and adapt your strategy as resources dwindle. Running out of power leaves you defenseless against the animatronics.</p>
+                </div>
+                <div>
+                    <h3>Learn Enemy Patterns</h3>
+                    <p>Study and memorize each animatronic's unique behavior patterns. Freddy follows specific routes, Foxy needs constant monitoring, and Bonnie and Chica have distinct movement preferences. Understanding these patterns is key to predicting and countering their attacks.</p>
+                </div>
+                <div>
+                    <h3>Time Management</h3>
+                    <p>Survive from 12 AM until 6 AM while managing multiple threats. Each hour brings new challenges and increased animatronic aggression. Develop efficient routines and adapt your strategy as the night progresses to ensure your survival until dawn.</p>
+                </div>
+
+                </div>
+            </section>
+
+            <section class="tips">
+                <h2>
+                    Tips for Playing FNAF
+                </h2>
+                <div class="content">
+                    
+                <div>
+                    <h3>Strategic Power Management</h3>
+                    <p>Master efficient power usage to survive until dawn. Only use doors when animatronics are nearby, minimize camera usage to essential checks, and use lights sparingly. Remember: running out of power before 6 AM leaves you completely vulnerable to attacks.</p>
+                </div>
+                <div>
+                    <h3>Understand Animatronic Behaviors</h3>
+                    <p>Each animatronic has distinct patterns and behaviors. Freddy moves in the darkness and plays music, Bonnie approaches from the left, Chica from the right, and Foxy needs regular monitoring to prevent his sprint. Learning these patterns is crucial for survival.</p>
+                </div>
+                <div>
+                    <h3>Develop Quick Reactions</h3>
+                    <p>Speed and precision are essential. Practice quick camera switches, door closures, and light checks. Develop muscle memory for controls and establish efficient monitoring routines. Every second counts when an animatronic is approaching.</p>
+                </div>
+                <div>
+                    <h3>Master Audio Cues</h3>
+                    <p>Sound is your best ally. Learn to recognize footsteps, laughs, and mechanical noises. Different sounds indicate specific animatronics and their locations. Use headphones for the best audio experience and increased survival chances.</p>
+                </div>
+                <div>
+                    <h3>Maintain Situational Awareness</h3>
+                    <p>Keep track of multiple threats simultaneously. Monitor high-risk areas like Pirate Cove regularly, check blind spots frequently, and maintain awareness of your power level. Developing a systematic approach to surveillance is key.</p>
+                </div>
+                <div>
+                    <h3>Stay Focused Under Pressure</h3>
+                    <p>Panic is your worst enemy. When multiple animatronics are active, stay calm and methodical. Prioritize immediate threats, manage resources carefully, and stick to your strategy even in intense situations. Mental composure is as important as game mechanics.</p>
+                </div>
+                <div>
+                    <h3>Learn from Failures</h3>
+                    <p>Each game over is a learning opportunity. Analyze what went wrong, adjust your strategy, and try different approaches. Success in FNAF comes from experience and adaptation to various situations and animatronic patterns.</p>
+                </div>
+                <div>
+                    <h3>Optimize Your Setup</h3>
+                    <p>Ensure your gaming environment is optimal. Play in a dark room for better visibility, use quality headphones for audio cues, and position your hands comfortably for quick access to all controls. The right setup can significantly improve your survival chances.</p>
+                </div>
+
+                </div>
+            </section>
+
+
+            <section class="faq">
+                <h2>Frequently Asked Questions about FNAF</h2>
+                <div class="content">
+                    
+                <div>
+                    <h3>What is Five Nights at Freddy's (FNAF)?</h3>
+                    <p>FNAF is a revolutionary survival horror game series where players take on the role of a night security guard at Freddy Fazbear's Pizza. Your task is to survive against hostile animatronic characters from midnight to 6 AM using only security cameras, limited power, and your wits.</p>
+                </div>
+                <div>
+                    <h3>How can I play FNAF online?</h3>
+                    <p>FNAF is readily accessible through various online gaming platforms. You can play it directly in your web browser without any downloads or installations. Our platform offers an optimized, unblocked version that provides the complete FNAF experience.</p>
+                </div>
+                <div>
+                    <h3>Is FNAF completely free to play?</h3>
+                    <p>Yes, you can play FNAF free online on our platform. While the original game is a paid title on Steam and other platforms, we offer a legitimate free-to-play version that maintains the core gameplay experience and signature horror elements.</p>
+                </div>
+                <div>
+                    <h3>Who are the main animatronic characters?</h3>
+                    <p>The main animatronics include Freddy Fazbear (the lead mascot), Bonnie the Bunny (approaches from the left), Chica the Chicken (approaches from the right), Foxy the Pirate (sprints from Pirate Cove), and the mysterious Golden Freddy. Each character has unique behaviors, movement patterns, and attack strategies.</p>
+                </div>
+                <div>
+                    <h3>What are the best strategies for survival?</h3>
+                    <p>Success in FNAF requires efficient power management, strategic camera monitoring, and quick reactions. Key strategies include: conserving power, learning animatronic patterns, using audio cues, and maintaining calm under pressure. Regular monitoring of high-risk areas like Pirate Cove is essential.</p>
+                </div>
+                <div>
+                    <h3>What age rating is FNAF?</h3>
+                    <p>FNAF is rated Teen (13+) due to its psychological horror elements, jump scares, and dark themes. While it contains no graphic violence, the intense atmosphere and frightening scenarios make it unsuitable for young children or those sensitive to horror content.</p>
+                </div>
+                <div>
+                    <h3>What makes FNAF different from other horror games?</h3>
+                    <p>FNAF revolutionized horror gaming with its unique blend of resource management, strategic gameplay, and psychological terror. Unlike traditional horror games, FNAF focuses on tension-building and strategic defense rather than combat, creating a uniquely terrifying experience.</p>
+                </div>
+                <div>
+                    <h3>Are there different FNAF games in the series?</h3>
+                    <p>Yes, FNAF has evolved into a successful franchise with multiple main entries and spin-offs. Each game introduces new mechanics, locations, and story elements while maintaining the core survival horror experience that fans love.</p>
+                </div>
+                <div>
+                    <h3>What devices support FNAF?</h3>
+                    <p>FNAF is available on multiple platforms including PC (Windows, Mac), mobile devices (iOS, Android), major gaming consoles (PlayStation, Xbox, Nintendo Switch), and web browsers. Our online version is optimized for cross-platform compatibility.</p>
+                </div>
+                <div>
+                    <h3>How difficult is FNAF for new players?</h3>
+                    <p>While FNAF has a learning curve, it's designed to be accessible to new players. The game gradually introduces mechanics and increases difficulty over successive nights. Practice, observation, and learning from mistakes are key to mastering the game.</p>
+                </div>
+                <div>
+                    <h3>Is there a story behind FNAF?</h3>
+                    <p>Yes, FNAF features a deep, complex narrative involving haunted animatronics, mysterious disappearances, and dark secrets. The story unfolds through subtle clues, phone calls, mini-games, and environmental storytelling, creating a rich lore that has captivated millions of fans.</p>
+                </div>
+                <div>
+                    <h3>Can I play FNAF offline?</h3>
+                    <p>While the original FNAF games can be played offline after purchase, our online version requires an internet connection for the best gaming experience. This ensures you always have access to the latest updates and features.</p>
+                </div>
+
+                </div>
+            </section>
+
+            <section class="cta">
+                <h2>
+                    Ready to Face the Terror at Freddy Fazbear's Pizza?
+                </h2>
+                <div class="content">
+                    <p>Your night shift at Freddy Fazbear's Pizza awaits! Immerse yourself in the most thrilling survival horror experience that has captivated millions worldwide. As you step into the security office, remember: every decision counts, every sound matters, and every moment could be your last. With state-of-the-art graphics, intelligent AI animatronics, and spine-chilling audio design, FNAF delivers an unparalleled horror gaming experience.</p>
+                    
+                    <p>Challenge yourself against the infamous Freddy Fazbear and his crew. Can you manage your resources wisely? Will you master the security systems? Do you have what it takes to survive all five nights? There's only one way to find out. Join countless other players who have tested their wit and courage in this revolutionary horror game.</p>
+                    
+                    <p>The best part? You can start playing FNAF right now, completely free! No downloads, no installations - just pure, heart-pounding survival horror at your fingertips. Whether you're a seasoned horror game veteran or new to the genre, FNAF offers an accessible yet deeply challenging experience that will keep you coming back for more.</p>
+                    
+                    <div class="cta-buttons">
+                        <a href="#games" class="primary-button">Play FNAF Now</a>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>FNAF Game</h3>
+                    <p>Welcome to the ultimate FNAF gaming experience! Dive into the terrifying world of Five Nights at Freddy's with our free online version. Face off against Freddy Fazbear and his animatronic friends in this legendary survival horror game that has captivated millions worldwide.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#games">Play Now</a></li>
+                        <li><a href="#how-to-play">How to Play</a></li>
+                        <li><a href="#tips">Game Tips</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="/terms-of-service.html">Terms of Service</a></li>
                     </ul>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- How to Play -->
-    <section class="py-16 bg-gray-900">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center text-purple-300">How to Play</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-gray-800 p-6 rounded-lg">
-                    <h3 class="text-xl font-semibold mb-4 text-purple-400">Check the Cameras</h3>
-                    <p class="text-gray-300">Monitor the security cameras to track the movement of animatronic characters throughout the restaurant.</p>
-                </div>
-                <div class="bg-gray-800 p-6 rounded-lg">
-                    <h3 class="text-xl font-semibold mb-4 text-purple-400">Manage Power</h3>
-                    <p class="text-gray-300">Use your power wisely! Every action consumes electricity, and you need to make it last until 6 AM.</p>
-                </div>
-                <div class="bg-gray-800 p-6 rounded-lg">
-                    <h3 class="text-xl font-semibold mb-4 text-purple-400">Close the Doors</h3>
-                    <p class="text-gray-300">When animatronics are near, close the security doors to protect yourself - but remember, this uses power!</p>
-                </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FNAF Game. All rights reserved.</p>
             </div>
-        </div>
-    </section>
-
-    <!-- Scoring System -->
-    <section class="py-16 bg-gray-800">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center text-purple-300">Scoring System</h2>
-            <div class="max-w-3xl mx-auto space-y-6 text-gray-300">
-                <p>Your score is based on several factors:</p>
-                <ul class="list-disc list-inside space-y-2">
-                    <li>Surviving each night: +1000 points</li>
-                    <li>Efficient power management: up to +500 points</li>
-                    <li>Successfully tracking animatronics: +100 points each</li>
-                    <li>Perfect night completion: +2000 bonus points</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Tips and Tricks -->
-    <section class="py-16 bg-gray-900">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center text-purple-300">Tips and Tricks</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-gray-800 p-6 rounded-lg">
-                    <h3 class="text-xl font-semibold mb-4 text-purple-400">Beginner Tips</h3>
-                    <ul class="list-disc list-inside text-gray-300 space-y-2">
-                        <li>Listen carefully for audio cues</li>
-                        <li>Don't overuse the cameras</li>
-                        <li>Keep track of Foxy in Pirate Cove</li>
-                        <li>Only close doors when necessary</li>
-                    </ul>
-                </div>
-                <div class="bg-gray-800 p-6 rounded-lg">
-                    <h3 class="text-xl font-semibold mb-4 text-purple-400">Advanced Strategies</h3>
-                    <ul class="list-disc list-inside text-gray-300 space-y-2">
-                        <li>Learn animatronic patterns</li>
-                        <li>Develop a power conservation strategy</li>
-                        <li>Master the camera switching technique</li>
-                        <li>Time your door checks perfectly</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 py-8">
-        <div class="container mx-auto px-4 text-center text-gray-400">
-            <p>&copy; 2025 FNAF Game Online. All rights reserved.</p>
         </div>
     </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/explore-games.js"></script>
+    <!-- <script>
+        // Load explore games section
+        fetch('../components/explore-games.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('exploreGamesContainer').innerHTML = html;
+                // Games will be loaded by explore-games.js
+            })
+            .catch(error => console.error('Error loading explore games section:', error));
+    </script> -->
 </body>
+
 </html>
