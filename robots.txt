@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+Allow: /wiki/
+Allow: /fnaf-1/
+Allow: /fnaf-2/
+Allow: /fnaf-3/
+Allow: /fnaf-4/
+Allow: /fnaf-5/
+Allow: /fnaf-6/
+Allow: /privacy-policy
+Allow: /terms-of-service
+
+Disallow: /js/
+Disallow: /css/
+Disallow: /img/
+Disallow: /vendor/
+
+Sitemap: https://fnaf-game.online/sitemap.xml 
