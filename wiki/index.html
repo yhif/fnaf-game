@@ -226,16 +226,15 @@
     <main>
         <div class="wiki-container">
             <h1>FNAF Wiki - Complete Guide to Five Nights at Freddy's Series</h1>
-            <p>Welcome to the ultimate FNAF Wiki - your comprehensive guide to the Five Nights at Freddy's series. Explore the timeline, characters, lore, and gameplay mechanics of this iconic horror franchise created by Scott Cawthon.</p>
+            <p>Welcome to the ultimate FNAF Wiki - your comprehensive guide to the Five Nights at Freddy's series. Explore the detailed gameplay mechanics, AI behavior, and lore of this iconic horror franchise created by Scott Cawthon.</p>
             
             <div class="wiki-navigation">
                 <a href="#overview" class="wiki-nav-item">Overview</a>
-                <a href="#timeline" class="wiki-nav-item">Timeline</a>
-                <a href="#games" class="wiki-nav-item">Games</a>
+                <a href="#mechanics" class="wiki-nav-item">Game Mechanics</a>
+                <a href="#ai" class="wiki-nav-item">AI Behavior</a>
+                <a href="#nights" class="wiki-nav-item">Night Progression</a>
                 <a href="#characters" class="wiki-nav-item">Characters</a>
-                <a href="#gameplay" class="wiki-nav-item">Gameplay</a>
                 <a href="#lore" class="wiki-nav-item">Lore</a>
-                <a href="#impact" class="wiki-nav-item">Cultural Impact</a>
             </div>
             
             <div class="wiki-layout">
@@ -243,12 +242,11 @@
                     <h3>Quick Links</h3>
                     <ul class="wiki-list">
                         <li><a href="#overview">Series Overview</a></li>
-                        <li><a href="#timeline">Timeline</a></li>
-                        <li><a href="#games">Main Series Games</a></li>
-                        <li><a href="#characters">Key Characters</a></li>
-                        <li><a href="#gameplay">Gameplay Mechanics</a></li>
+                        <li><a href="#mechanics">Core Mechanics</a></li>
+                        <li><a href="#ai">AI System</a></li>
+                        <li><a href="#nights">Night Progression</a></li>
+                        <li><a href="#characters">Character Details</a></li>
                         <li><a href="#lore">Story & Lore</a></li>
-                        <li><a href="#impact">Cultural Impact</a></li>
                     </ul>
                     
                     <h3>Play FNAF Games</h3>
@@ -265,7 +263,7 @@
                 <div class="wiki-content">
                     <section id="overview" class="wiki-section">
                         <h2>Series Overview</h2>
-                        <p>The Five Nights at Freddy's (FNAF) game series is a horror-themed franchise created by Scott Cawthon, first released on August 8, 2014. It has since become a global phenomenon with multiple sequels, novels, and merchandise. The series is set primarily in a fictional restaurant called Freddy Fazbear's Pizza, inspired by real-life family entertainment venues such as Chuck E. Cheese and ShowBiz Pizza Place.</p>
+                        <p>Five Nights at Freddy's is a point-and-click survival horror game where players assume the role of Mike Schmidt, a night security guard at Freddy Fazbear's Pizza. The objective is to survive from midnight to 6:00 AM while avoiding attacks from homicidal animatronics.</p>
                         
                         <div class="wiki-quote">
                             "At Freddy Fazbear's Pizza, the animatronics are programmed to entertain during the day, but at night they roam freely. As a night security guard, your job is to survive five nights while monitoring these potentially dangerous animatronics."
@@ -273,131 +271,181 @@
                         
                         <h3>Core Concept</h3>
                         <ul class="wiki-list">
-                            <li>Players usually assume the role of a night security guard at Freddy Fazbear's Pizza.</li>
-                            <li>The gameplay involves monitoring security cameras, managing lights, doors, and ventilation to survive against hostile animatronic characters.</li>
-                            <li>The story unfolds through voice recordings, mini-games, and in-game Easter eggs.</li>
+                            <li>Players monitor security cameras and manage limited power resources</li>
+                            <li>Each night lasts from 12 AM to 6 AM with increasing difficulty</li>
+                            <li>Animatronics have unique AI behaviors and movement patterns</li>
+                            <li>Power management is crucial for survival</li>
                         </ul>
                     </section>
                     
-                    <section id="timeline" class="wiki-section">
-                        <h2>Timeline and Story Progression</h2>
-                        <p>The narrative timeline is complex and spans several decades, focusing on the dark history of Freddy Fazbear's Pizza and its animatronics. Key events include the founding of Freddy Fazbear Entertainment in the 1970s, multiple incidents of child murders, and hauntings by spirits possessing animatronics.</p>
-                        
-                        <div class="wiki-timeline">
-                            <div class="wiki-timeline-item">
-                                <div class="wiki-timeline-date">1970s and earlier</div>
-                                <p>William Afton and Henry Emily develop entertainment animatronics; early conflicts begin.</p>
-                            </div>
-                            <div class="wiki-timeline-item">
-                                <div class="wiki-timeline-date">1970s</div>
-                                <p>Founding of Freddy Fazbear Entertainment and early restaurant openings; first child murder occurs.</p>
-                            </div>
-                            <div class="wiki-timeline-item">
-                                <div class="wiki-timeline-date">1983</div>
-                                <p>Brand consolidation under Freddy Fazbear and Friends; incidents like the "Bite of '83."</p>
-                            </div>
-                            <div class="wiki-timeline-item">
-                                <div class="wiki-timeline-date">1987 and before</div>
-                                <p>Multiple child deaths and disappearances; spirits possess animatronics; restaurant closures.</p>
-                            </div>
-                            <div class="wiki-timeline-item">
-                                <div class="wiki-timeline-date">1993 and around</div>
-                                <p>Restaurant reopens with old animatronics; William Afton killed by spring trap suit; spirits freed.</p>
-                            </div>
-                            <div class="wiki-timeline-item">
-                                <div class="wiki-timeline-date">2023 and later</div>
-                                <p>Freddy Fazbear's Pizza becomes a horror attraction; attempts to burn down the facility fail.</p>
-                            </div>
-                        </div>
+                    <section id="mechanics" class="wiki-section">
+                        <h2>Core Gameplay Mechanics</h2>
+                        <h3>Power Management</h3>
+                        <p>The player's power supply starts at 100% and drains when:</p>
+                        <ul class="wiki-list">
+                            <li>Using security cameras</li>
+                            <li>Closing doors</li>
+                            <li>Turning on lights</li>
+                        </ul>
+                        <p>Power consumption rates vary:</p>
+                        <ul class="wiki-list">
+                            <li>Doors consume more power than lights</li>
+                            <li>Continuous camera usage steadily drains power</li>
+                            <li>Power reaching zero results in system shutdown and Freddy's attack</li>
+                        </ul>
+
+                        <h3>Defensive Tools</h3>
+                        <ul class="wiki-list">
+                            <li>Security cameras for monitoring animatronic movements</li>
+                            <li>Two doors that can be closed to block animatronics</li>
+                            <li>Lights to check for animatronics at doors</li>
+                            <li>Ventilation system (in later games)</li>
+                        </ul>
                     </section>
                     
-                    <section id="games" class="wiki-section">
-                        <h2>Main Series Games and Events</h2>
+                    <section id="ai" class="wiki-section">
+                        <h2>Animatronic AI and Movement System</h2>
+                        <p>The animatronic movement system operates on a 5-second interval check:</p>
+                        <ul class="wiki-list">
+                            <li>Each interval generates a random number (1-20)</li>
+                            <li>Animatronics move if the number is less than their AI value</li>
+                            <li>AI values increase as nights progress</li>
+                            <li>Custom night allows setting AI values from 0 to 20</li>
+                        </ul>
+
+                        <h3>Individual Animatronic Behaviors</h3>
                         <table class="wiki-table">
                             <thead>
                                 <tr>
-                                    <th>Time Period</th>
-                                    <th>Event Description</th>
-                                    <th>Corresponding Games</th>
+                                    <th>Character</th>
+                                    <th>Behavior Pattern</th>
+                                    <th>Special Traits</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>1970s and earlier</td>
-                                    <td>William Afton and Henry Emily develop entertainment animatronics; early conflicts begin.</td>
-                                    <td>Freddy Fazbear's Pizzeria Simulator</td>
+                                    <td>Freddy</td>
+                                    <td>Moves only when cameras are active</td>
+                                    <td>Teleports quickly when power dies</td>
                                 </tr>
                                 <tr>
-                                    <td>1970s</td>
-                                    <td>Founding of Freddy Fazbear Entertainment and early restaurant openings; first child murder occurs.</td>
-                                    <td>FNAF 2, Simulator</td>
+                                    <td>Bonnie</td>
+                                    <td>Aggressive, frequent movements</td>
+                                    <td>Approaches from left side</td>
                                 </tr>
                                 <tr>
-                                    <td>1983</td>
-                                    <td>Brand consolidation under Freddy Fazbear and Friends; incidents like the "Bite of '83."</td>
-                                    <td>FNAF 4, Sister Location</td>
+                                    <td>Chica</td>
+                                    <td>Similar to Bonnie</td>
+                                    <td>Approaches from right side</td>
                                 </tr>
                                 <tr>
-                                    <td>1987 and before</td>
-                                    <td>Multiple child deaths and disappearances; spirits possess animatronics; restaurant closures.</td>
-                                    <td>FNAF 2</td>
+                                    <td>Foxy</td>
+                                    <td>Stays in Pirate Cove</td>
+                                    <td>Rushes if not monitored</td>
                                 </tr>
                                 <tr>
-                                    <td>1993 and around</td>
-                                    <td>Restaurant reopens with old animatronics; William Afton killed by spring trap suit; spirits freed.</td>
-                                    <td>FNAF 1, 3</td>
-                                </tr>
-                                <tr>
-                                    <td>2023 and later</td>
-                                    <td>Freddy Fazbear's Pizza becomes a horror attraction; attempts to burn down the facility fail.</td>
-                                    <td>FNAF 3, Simulator</td>
+                                    <td>Golden Freddy</td>
+                                    <td>Rare appearances</td>
+                                    <td>Causes hallucinations</td>
                                 </tr>
                             </tbody>
                         </table>
-                        
-                        <h3>Expanded Universe and Spin-offs</h3>
-                        <p>The series includes spin-offs and collaborative games that explore alternate timelines and perspectives. These involve VR experiences, new antagonists, and expanded lore about the corporate and supernatural elements behind the restaurants.</p>
                     </section>
                     
-                    <section id="gameplay" class="wiki-section">
-                        <h2>Gameplay Elements</h2>
-                        <h3>Survival Mechanics</h3>
-                        <p>Players must manage limited power resources while monitoring animatronic movements. Each night typically lasts from 12 AM to 6 AM, with increasing difficulty as the nights progress.</p>
-                        
-                        <h3>Animatronics</h3>
-                        <p>Each animatronic has unique behaviors and attack patterns. Some are more aggressive than others, and their movements can be tracked through security cameras.</p>
-                        
-                        <h3>Storytelling</h3>
-                        <p>Narrative is revealed indirectly through environmental clues, mini-games, and audio logs. The story is intentionally cryptic, encouraging fan theories and speculation.</p>
-                        
-                        <h3>Horror Atmosphere</h3>
-                        <p>Jump scares and suspenseful tension are central to the player experience. The games use sound design, limited visibility, and psychological horror to create a terrifying atmosphere.</p>
+                    <section id="nights" class="wiki-section">
+                        <h2>Night-by-Night Progression</h2>
+                        <div class="wiki-timeline">
+                            <div class="wiki-timeline-item">
+                                <div class="wiki-timeline-date">Night 1</div>
+                                <p>Basic introduction with minimal animatronic activity. Focus on learning camera and door mechanics.</p>
+                            </div>
+                            <div class="wiki-timeline-item">
+                                <div class="wiki-timeline-date">Night 2</div>
+                                <p>Increased animatronic movement. Power management becomes crucial.</p>
+                            </div>
+                            <div class="wiki-timeline-item">
+                                <div class="wiki-timeline-date">Night 3</div>
+                                <p>Foxy becomes active. More aggressive animatronic behavior.</p>
+                            </div>
+                            <div class="wiki-timeline-item">
+                                <div class="wiki-timeline-date">Night 4</div>
+                                <p>Maximum aggression. Phone Guy's message implies previous guard's death.</p>
+                            </div>
+                            <div class="wiki-timeline-item">
+                                <div class="wiki-timeline-date">Night 5</div>
+                                <p>Peak difficulty with fastest animatronic movements.</p>
+                            </div>
+                            <div class="wiki-timeline-item">
+                                <div class="wiki-timeline-date">Custom Night</div>
+                                <p>Player-set AI values. 20/20/20/20 mode requires perfect strategy.</p>
+                            </div>
+                        </div>
+
+                        <h3>Power Management Milestones</h3>
+                        <ul class="wiki-list">
+                            <li>1 AM: Aim for 80% power remaining</li>
+                            <li>2 AM: Maintain 60% power</li>
+                            <li>3 AM: Keep 40% power</li>
+                            <li>4 AM: Preserve 25% power</li>
+                            <li>5 AM: Survive with 9% power</li>
+                        </ul>
+                    </section>
+                    
+                    <section id="characters" class="wiki-section">
+                        <h2>Character Details and Behaviors</h2>
+                        <h3>Freddy Fazbear</h3>
+                        <ul class="wiki-list">
+                            <li>Leader of the animatronic band</li>
+                            <li>Moves only when cameras are active</li>
+                            <li>Special attack sequence when power dies</li>
+                            <li>Laughs to signal movement</li>
+                        </ul>
+
+                        <h3>Bonnie the Bunny</h3>
+                        <ul class="wiki-list">
+                            <li>Most aggressive animatronic</li>
+                            <li>Frequent movements from left side</li>
+                            <li>Can linger at doors</li>
+                            <li>Distinctive footsteps sound</li>
+                        </ul>
+
+                        <h3>Chica the Chicken</h3>
+                        <ul class="wiki-list">
+                            <li>Right-side approach pattern</li>
+                            <li>Kitchen area specialist</li>
+                            <li>Distinctive kitchen sounds</li>
+                            <li>Moderate aggression level</li>
+                        </ul>
+
+                        <h3>Foxy the Pirate Fox</h3>
+                        <ul class="wiki-list">
+                            <li>Unique hiding mechanic in Pirate Cove</li>
+                            <li>Requires regular camera checks</li>
+                            <li>Fast rush attack if neglected</li>
+                            <li>Running sound effects</li>
+                        </ul>
                     </section>
                     
                     <section id="lore" class="wiki-section">
-                        <h2>Key Story Elements</h2>
-                        <h3>The Afton Family</h3>
-                        <p>The Afton family, particularly William Afton (also known as the Purple Guy), is central to the series' lore. William is responsible for the murders of children at Freddy Fazbear's Pizza, which leads to the haunting of the animatronics.</p>
-                        
+                        <h2>Story Elements and Lore</h2>
                         <h3>The Missing Children Incident</h3>
-                        <p>Five children were lured to a back room by William Afton, who was wearing a Spring Bonnie suit. He murdered them and hid their bodies inside the animatronics, which later became possessed by their spirits.</p>
+                        <p>Five children were lured to a back room by William Afton (Purple Guy) wearing a Spring Bonnie suit. Their bodies were hidden in the animatronics, which became possessed by their spirits.</p>
                         
                         <h3>The Bite of '83/'87</h3>
-                        <p>Two significant incidents in the series: the Bite of '83, where a child was bitten by Fredbear, and the Bite of '87, where an employee was bitten by an animatronic, leading to the removal of the animatronics' ability to walk during the day.</p>
-                        
-                        <h3>Circus Baby's Entertainment & Rental</h3>
-                        <p>A sister location to Freddy Fazbear's Pizza, featuring its own set of animatronics, including Circus Baby, who was designed to capture children.</p>
-                    </section>
-                    
-                    <section id="impact" class="wiki-section">
-                        <h2>Cultural Impact and Legacy</h2>
-                        <p>The FNAF series has inspired extensive fan theories, fan art, and fan-made games. It holds a Guinness World Record for the most sequels released in a year. The franchise has expanded into novels and merchandise, cementing its place in horror gaming culture.</p>
-                        
-                        <h3>Fan Community</h3>
-                        <p>The FNAF community is known for its dedication to solving the complex lore of the series. Theorists like MatPat from Game Theory have gained significant attention for their analysis of the games' story.</p>
-                        
-                        <h3>Expanded Media</h3>
-                        <p>Beyond the games, the FNAF universe has expanded into novels, graphic novels, and upcoming film adaptations, further enriching the franchise's lore and reach.</p>
+                        <p>Two critical incidents:</p>
+                        <ul class="wiki-list">
+                            <li>Bite of '83: Child bitten by Fredbear</li>
+                            <li>Bite of '87: Employee bitten by animatronic</li>
+                            <li>Resulted in removal of daytime walking capability</li>
+                        </ul>
+
+                        <h3>Animatronic Possession</h3>
+                        <ul class="wiki-list">
+                            <li>Animatronics emit foul odors</li>
+                            <li>Blood and mucus leaks reported</li>
+                            <li>Mistake humans for endoskeletons</li>
+                            <li>Attempt to stuff humans into suits</li>
+                        </ul>
                     </section>
                     
                     <section class="wiki-section">
@@ -428,8 +476,8 @@
                     <h3>Quick Links</h3>
                     <ul>
                         <li><a href="../">Play Now</a></li>
-                        <li><a href="#gameplay">Gameplay</a></li>
-                        <li><a href="#timeline">Timeline</a></li>
+                        <li><a href="#mechanics">Game Mechanics</a></li>
+                        <li><a href="#ai">AI System</a></li>
                         <li><a href="#lore">Lore</a></li>
                     </ul>
                 </div>
